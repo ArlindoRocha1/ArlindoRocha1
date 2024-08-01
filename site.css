@@ -1,0 +1,12 @@
+header {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  #galeria img {
+    margin-bottom: 15px;
+  }
+  
+  #contato {
+    background-color: #f8f9fa;
+  }

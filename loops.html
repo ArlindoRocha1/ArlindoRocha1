@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMADOR DE NUMEROS</title>
+</head>
+<body>
+    <h1>SOMADOR DE NUMEROS</h1>
+    <p>digite numeros, se digitar o numero 999 o programa vai parar:</p>
+    <input type="Namber" id="numero" placeholder="Digite um numero">
+    <button onclick="adicionarNumero()">Adicionar</button>
+    <button onclick="finalizar()">Finalizar</button>
+    <p id="mensagem"></p>
+    <p>Total de números digitados: <span id="totalNumeros">0</span></p>
+    <p>Soma dos números digitados: <span id="somaNumeros">0</span></p>
+
+    <script>
+        let totalNumeros = 0;
+        let soma = 0;
+        let parar = false;
+
+        function adicionarNumero() {
+            if (parar) return;
+            const numeroInput = document.getElementById('numero');
+            const numero = parseInt(numeroInput.value);
+
+            if (numero === 999) {
+                parar = true;
+                document.getElementById('mensagem').textContent = "Você digitou 999. O programa parou.";
+                return;
+            }
+            totalNumeros++;
+            soma += numero;
+
+            document.getElementById('totalNumeros').textContent = totalNumeros;
+            document.getElementById('somaNumeros').textContent = soma;
+
+            numeroInput.value = '';
+            numeroInput.focus();
+        }
+
+        function finalizar() {
+            parar = true;
+            document.getElementById('mensagem').textContent = "Programa finalizado.";
+        }
+    </script>
+</body>
+</html>
+            
+
+    
+    
+

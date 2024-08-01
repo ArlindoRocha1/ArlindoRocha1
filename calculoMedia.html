@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calcular Media</h1>
+    <form>
+        <input type="number" id="nota1">
+        <input type="number" id="nota2">
+        <div id="resMedia"></div>
+        <input type="button"value="calcular Media" onclick="media()">
+    </form>
+
+    <script>
+        function media() {
+            var nota1 = Number(document.getElementById(`nota1`).value)
+            var nota2 = Number(document.getElementById(`nota2`).value)
+            var resMedia = document.getElementById(`resMedia`)
+
+            var media = (nota1 + nota2) / 2
+
+            if (media >= 7) {
+                resMedia.innerHTML = `Voce foi aprovado com a media ${media}`
+                resMedia.style.color = `green`
+            } else { 
+                resMedia.innerHTML = `Voce foi aprovado com a media ${media}`
+                resMedia.style.color = `red`
+            }
+        }
+    </script>
+    </form>
+    
+</body>
+</html>

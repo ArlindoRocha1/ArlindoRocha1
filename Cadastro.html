@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <form>
+        NOME<input type="text" id="nm" />
+        <br><br>
+        NOME DE USUARIO<input type="text" id="us" />
+        <br><br>
+        <E-mail<E-mail><input type="text" id="em" />
+        <br><br>
+        CPF<input type="text" id="CPF"/>
+        <br><br>
+        DATA DE NASCIMENTO<input type="text" id="dn"/>
+        <br><br>
+        SEXO<input type="text" id="sx"/>
+        <br><br>
+        ENDEREÇO<input type="text" id="end"/>
+        <br><br>
+        SENHA<input type="text" id="sn"/>  
+        <br><br>     
+        <input type="button" value="Cadastro" onclick="cadastrar()">
+        <div id="cad"></div>
+        
+    </form>
+
+    <script>
+
+        function cadastrar() {
+            var nm = document.getElementById("nm").value
+            var us = document.getElementById("us").value
+            var em = document.getElementById("em").value
+            var CPF = document.getElementById("CPF").value
+            var dn = document.getElementById("dn").value
+            var sx = document.getElementById("sx").value
+            var end = document.getElementById("end").value
+            var sn = document.getElementById("sn").value
+            var resNome = document.getElementById("Cadastro");
+
+            resNome.innerHTML = `seu nome é ${nm}`
+        }
+
+
+        
+        
+    </script>
+
+</body>
+
+</html>

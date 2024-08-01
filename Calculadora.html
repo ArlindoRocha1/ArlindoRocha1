@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora simples</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <form>
+        <input type="number" id="num1" />
+        <br/>
+        <br/>
+        <input type="number" id="num2" />
+        <br/>
+        <br/>
+    
+        <select id="operacao">
+            <option>soma</option>
+            <option>subtracao</option>
+            <option>multiplicacao</option>
+            <option>divisao</option>
+        </select>
+        <br/>
+        <br/>
+    
+        <p id="result"></p>
+        <button type="button" onclick="calculate()">Calcular</button>
+    </form>
+    
+
+    <script>
+        function calculate() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var result = document.getElementById("result");
+            var operacao = document.getElementById("operacao").value;
+
+            var resultado;
+
+        switch (operacao) {
+            case "soma": 
+                resultado = num1 + num2;
+                break;
+            case "subtracao": 
+                 resultado = num1 - num2;
+                 break;
+            case "multiplicacao":
+                 resultado = num1 * num2;
+                 break;
+            case "divisao":
+                 resultado = num1 / num2;
+                 break;
+            default:
+                 resultado = "operaçao invalida.";
+            }
+            result.innerHTML = `O resultado é ${resultado}`
+        }
+    </script>
+    
+</body>
+</html>
+
+
+

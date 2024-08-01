@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area {
+            font: normal 20pt Arial, sans-serif;
+            
+            background-image: ("Astronautas");
+            color: white;
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            background-image: url();
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="voce()" onmouseenter="queEsta()" onmouseout="meOlhando()">
+        Reaja
+    </div>
+
+    <script>
+        var a = document.getElementById("area");
+
+        function voce() {
+            a.innerText = "voce!!";
+            a.style.backgroundImage = 'url(https://images.educamaisbrasil.com.br/content/noticias/9-de-janeiro-dia-do-astronauta_g.jpg)';
+        }
+
+        function queEsta() {
+            a.innerText = "Está!!";
+            a.style.background = 'url(https://www.shutterstock.com/image-vector/astronaut-space-suit-flying-next-600nw-2324206919.jpg)';
+        }
+
+        function meOlhando() {
+            a.innerText = "olhando!!";
+            a.style.background = 'url(https://img.freepik.com/fotos-gratis/um-leao-com-uma-juba-de-arco-iris-e-olhos-azuis_1340-39421.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718668800&semt=sph)';
+        }
+    </script>
+</body>
+</html>

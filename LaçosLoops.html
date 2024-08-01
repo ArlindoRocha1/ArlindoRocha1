@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Repetição</title>
+
+</head>
+<style>
+
+</style>
+<body>
+    <h1>Faça o Calculo</h1>
+    <input type= "Number" id= "nota">
+    <input type= "button" value= "CLICAR" onclick="resultado()">
+    <p id="aviso"></p>
+
+    <input type= "text" id= "user">
+    <input type="text" id="senha">
+    <input type= "button" value= "Cadastro" onclick="cad()">
+    <p id="us"></p>
+
+    <input type= "Number" id= "primo">
+    <input type= "button" value= "Verifique" onclick="verificacao()">
+    <p id="verif"></p>
+
+
+</body>
+
+<script>
+  function resultado(){
+      var nota = Number(document.getElementById("nota").value);
+      var aviso = document.getElementById("aviso")
+
+      if (nota <=10 && nota >=0) {
+          aviso.innerHTML = `Valido`
+
+      } 
+        else {
+          aviso.innerHTML = `Invalido`
+        }
+      }
+
+        function cad() {
+          var user = document.getElementById("user").value;
+          var senha = document.getElementById("senha").value;
+          var us = document.getElementById("us");
+
+          if (user !== senha) {
+      us.innerHTML = "Cadastro realiza com sucesso";
+          }
+          else {
+      us.innerHTML = "Erro: A senha não pode ser igual ao nome de usuario. Tente novamente.";
+      
+          }
+          }
+        
+
+        function verificacao() {
+          var primo = Number(document.getElementById("primo").value);
+          var verif = document.getElementById("verif");
+        
+
+          if (primo % 2 == 0) {
+            verif. innerHTML = `O numero ${primo} é par`
+          }
+
+            else if (primo % 2 ==1) {
+              verif.innerHTML = `O numero ${primo} é impar`
+            }
+          
+          }
+          
+
+             
+            
+            
+          </script>
+  
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #Metodo {
+        padding-left: -40px;
+        padding-right: -40px;
+    }
+
+    p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+</style>
+
+<body>
+    <h1>
+        Metodo de texto DOM dentro JavaScript
+    </h1>
+
+    <div id="Composto">Bem Vindo</div>
+
+
+    <p>Poderosa ferramenta que está dentro do navegador, um conjunto
+        de objetos do JavaScript no tratamento de componentes visuais</p>
+    <p>Além disso também aprenderemos como funciona uma Árvore
+        DOM</p>
+    <p>Modelo de Objetos para documentos, basicamente é um conjunto objetos
+        dentro do seu navegador que vai dar acesso aos componentes internos
+        do web site, ele está presente quando esta rodando JavaScript dentro do
+        navegador.</p>
+    <p>A árvore DOM começa da raiz e essa raiz dentro do navegador é
+        chamada de WINDOW, TUDO DENTRO DO JAVASCRIPT ESTÁ
+        DENTRO DE UM OBJETO CHAMADO WINDOW (JANELA).</p>
+
+
+    <div id="Metodo">click Aqui</div>
+    <p></p>
+
+        <script>
+            var corpo = window.document.body
+            corpo.style.backgroundColor = 'aqua'
+            corpo.style.fontFamily = 'Lucida Sans'
+            corpo.style.textAlign = 'center'
+
+
+            var d = window.document.getElementById('Metodo')
+            d.innerText = 'Boa Tarde'
+
+            var d = window.document.getElementById('Metodo');
+            d.innerText = 'Boa Tarde'
+
+            var d = window.document.getElementById('composto');
+            d.innerText = 'Bem vindo'
+
+
+
+
+
+            
+
+                
+                
+        </script>
+</body>
+
+
+</html>

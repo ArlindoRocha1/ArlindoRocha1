@@ -1,0 +1,41 @@
+h1 {
+   color: #050a0f6a;
+   background-color: blueviolet;
+   text-align: center;
+}
+
+img {
+   width: 500px;
+   height: 500px;
+   margin-left: 35%;
+}
+
+#p1 {
+   font-size: 50px;
+
+}
+
+#p2 {
+   font-size: 20px;
+}
+
+body{
+   background-image: url('./img/Sunrises_and_sunsets_Hands_Sun_571948_1280x918.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+table, th, td {
+   border: 2px solid black;
+   color: rgb(5, 26, 127);
+   border-radius:  5px;
+}
+body{
+   background-image: url();
+}
+body{
+   border: 1px solid black;
+
+}
+body{
+   
+}
